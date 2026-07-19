@@ -1,0 +1,36 @@
+suppressMessages({library(DESeq2); library(tximport)})
+AN <- "/Users/carsonandorf/Documents/ClaudeScience/expression_ph1/analysis"
+samples <- read.delim(file.path(AN,"ref/samples.tsv"), stringsAsFactors=FALSE)
+tx2gene <- read.delim(file.path(AN,"ref/tx2gene.tsv"), header=FALSE)
+files <- file.path(AN,"salmon",samples$sample,"quant.sf")
+names(files) <- samples$sample
+stopifnot(all(file.exists(files)))
+txi <- tximport(files, type="salmon", tx2gene=tx2gene)
+coldata <- data.frame(row.names=samples$sample, condition=factor(samples$condition))
+dds <- DESeqDataSetFromTximport(txi, colData=coldata, design=~condition)
+dds <- dds[rowSums(counts(dds)) > 1, ]
+cat("genes after prefilter:", nrow(dds), "\n")
+# robust VST for small-n (parametric fit fails)
+dds <- estimateSizeFactors(dds)
+dds <- estimateDispersions(dds, fitType="local")
+vsd <- varianceStabilizingTransformation(dds, blind=FALSE)
+vmat <- assay(vsd)
+write.csv(vmat, file.path(AN,"matrices/vst_allsamples.csv"))
+# normalized counts
+nc <- counts(dds, normalized=TRUE)
+write.csv(nc, file.path(AN,"matrices/normalized_counts_allsamples.csv"))
+# PCA data (top 500 variable genes)
+rv <- matrixStats::rowVars(vmat)
+sel <- order(rv, decreasing=TRUE)[seq_len(min(500,length(rv)))]
+pca <- prcomp(t(vmat[sel,]))
+pv <- pca$sdev^2/sum(pca$sdev^2)
+pcadf <- data.frame(sample=colnames(vmat), PC1=pca$x[,1], PC2=pca$x[,2],
+                    PC3=pca$x[,3], condition=coldata$condition)
+write.csv(pcadf, file.path(AN,"matrices/pca_allsamples.csv"), row.names=FALSE)
+writeLines(as.character(round(pv[1:4],4)), file.path(AN,"matrices/pca_varexp.txt"))
+# sample-sample correlation (spearman on vst)
+cormat <- cor(vmat, method="pearson")
+write.csv(cormat, file.path(AN,"matrices/sample_correlation_allsamples.csv"))
+saveRDS(dds, file.path(AN,"de/dds_allsamples.rds"))
+cat("PC1-4 varexp:", round(pv[1:4],4), "\n")
+cat("QC DONE\n")
