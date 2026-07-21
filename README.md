@@ -1,254 +1,159 @@
-# *Fusarium graminearum* PH-1 RNA-seq — Four Light Conditions
+# *Fusarium graminearum* PH-1 — Light-Regime RNA-seq Differential Expression
 
-RNA-seq processing and differential expression for *Fusarium graminearum*
-PH-1 grown under **four light conditions** — black, dark, high, and low
-light — with **3 biological replicates each (12 libraries)** and **all six
-pairwise differential-expression contrasts**.
-
-**Pipeline:** Salmon (selective alignment → TPM + counts) + HISAT2 (spliced
-genome alignment → BAMs) + StringTie (FPKM/TPM) → DESeq2 (pairwise DE).
-Runs natively on Apple Silicon (osx-arm64).
-
-## Repository layout
-
-| Folder | Contents |
-|---|---|
-| [`figures/`](figures) | All QC, DE, expression-heatmap, and Venn figures (PNG) |
-| [`matrices/`](matrices) | Expression matrices, normalized counts, VST, PCA, correlation, mapping summary, FGSG cross-reference |
-| [`de_results/`](de_results) | Per-contrast DE tables, combined long table, DE summary |
-| [`scripts/`](scripts) | DESeq2 pairwise DE + QC scripts, sample-sheet template |
-
-All gene-level tables (expression matrices and DE results) now carry an
-`FGSG_id` column immediately after `gene_id`, mapping each funannotate
-`FGRAM000v1_` model to its legacy Broad `FGSG_` identifier — see
-[FGSG cross-reference](#fgsg-cross-reference) below.
-
----
+RNA-seq processing and differential expression for *Fusarium graminearum* PH-1
+grown under four light regimes, mapped to the **NCBI RefSeq** reference genome
+and annotation (assembly `GCF_000240135.3`, ASM24013v3) using native
+**FGSG_ gene IDs**. Differential expression is reported three ways — from raw
+read counts (DESeq2) and from TPM and FPKM (limma-trend) — for **all six
+pairwise contrasts**.
 
 ## Experimental design
 
-| Condition | Replicates |
-|---|---|
-| black_light | B10_S1, B11_S2, B12_S3 |
-| dark_light  | D10_S4, D11_S5, D12_S6 |
-| high_light  | H13_S7, H14_S8, H15_S9 |
-| low_light   | L13_S10, L14_S11, L15_S12 |
+| Condition | Code | Description | Replicates |
+|-----------|------|-------------|------------|
+| Control   | H    | Half/half — 12 h light / 12 h dark (**reference level**) | H13_S7, H14_S8, H15_S9 |
+| Black light | B  | Black light | B10_S1, B11_S2, B12_S3 |
+| Dark light | D   | Dark light | D10_S4, D11_S5, D12_S6 |
+| Low light | L    | Low light | L13_S10, L14_S11, L15_S12 |
 
-- **Genome:** *F. graminearum* PH-1, assembly ASM24013v3 (19 sequences: chr1–4 + 15 contigs)
-- **Annotation:** funannotate GFF3 — 13,377 genes / 13,569 mRNA / 301 tRNA
-- **Reads:** paired-end, ~100 bp, 6–10M pairs per library
+12 paired-end libraries (~101 bp), 3 biological replicates per condition.
 
-## Tool versions
+## Pipeline
 
-salmon 2.3.4 · hisat2 2.2.2 · samtools 1.22.1 · fastp 1.1.0 ·
-stringtie 3.0.3 · gffread 0.12.9 · subread/featureCounts 2.1.1 ·
-DESeq2 1.50.2 · tximport 1.38.2 · apeglm (R 4.5.3)
+```
+FASTQ
+  │  fastp 1.1.0            adapter/quality trim (Q20, len≥36, --detect_adapter_for_pe)
+  ▼
+trimmed reads
+  │  HISAT2 2.2.2           --rna-strandness RF --dta, spliced align to NCBI genome
+  ▼
+sorted BAMs (samtools 1.22.1)
+  ├─ featureCounts 2.1.1    -p --countReadPairs -s 2 -t exon -g gene_id  → raw counts
+  └─ StringTie 3.0.3        -e -B --rf                                    → TPM, FPKM
+  ▼
+gene × sample matrices (13,725 gene models × 12 libraries, FGSG_ IDs)
+  ├─ DESeq2 (R 4.5.3)       raw counts, Wald test + apeglm shrinkage
+  ├─ limma-trend            log2(TPM+1),  eBayes(trend=TRUE, robust=TRUE)
+  └─ limma-trend            log2(FPKM+1), eBayes(trend=TRUE, robust=TRUE)
+  ▼
+DE tables · VST clustered heatmaps · hypergeometric GO enrichment (blast2go GAF)
+```
 
-## Workflow
-
-1. **Reference prep** — `gffread` extracted 13,870 transcripts; tx2gene map (13,870 tx → 13,377 genes); Salmon decoy-aware index (whole genome as 19 decoys, k=31); HISAT2 genome index + splice sites.
-2. **Trimming** — `fastp --detect_adapter_for_pe --qualified_quality_phred 20 --length_required 36`. >98% reads passed, Q30 ~93%, GC ~51% across all 12.
-3. **Salmon quant** — `-l A --seqBias --gcBias -g tx2gene`. Library type auto-detected **ISR** (stranded, fr-firststrand).
-4. **HISAT2 align** — `--rna-strandness RF --dta` + known splice sites → sorted/indexed BAMs (for IGV).
-5. **StringTie** — `-e -G Fgram.gtf --rf` → per-gene FPKM & TPM.
-6. **Matrices** — Salmon gene counts (DESeq2 input via tximport) + TPM; StringTie FPKM/TPM.
-7. **QC** — library size, gene detection, replicate correlation, VST PCA.
-8. **Pairwise DE** — [`scripts/run_pairwise_DE.R`](scripts/run_pairwise_DE.R): all 6 DESeq2 Wald contrasts, apeglm LFC shrinkage, padj < 0.05 & |log2FC| ≥ 1.
-
----
+**Significance threshold (all methods):** adjusted *p* < 0.05 **and** |log2FC| ≥ 1.
+Positive log2FC = up in the first-named condition of each contrast.
 
 ## Quality control
 
-### Sample structure (VST PCA)
+QC is strong: **PC1 captures 80%** of variance (PC2 10.4%), within-condition
+replicate correlation r ≈ 0.99 (0.928–0.993 overall), and samples cluster
+cleanly by light regime. Per-library alignment rate ~97.5%. One library,
+**B12_S3**, shows 30% multimapping (a known property of that library) and the
+smallest DESeq2 size factor (0.648); it was retained, and multimapping reads
+were excluded from counting.
 
-![VST PCA of all 12 libraries](figures/qc_pca_allsamples.png)
+![Alignment rates](figures/qc_alignment_rates.png)
+![PCA](figures/qc_pca.png)
+![Sample correlation](figures/qc_correlation.png)
+![Library size and gene detection](figures/qc_libsize_detection.png)
 
-The four conditions separate cleanly with tight replicate grouping. PC1 = 81%,
-PC2 = 11% of variance (top 500 variable genes). Within-condition replicate
-correlation r ≈ 0.997 vs r ≈ 0.955 between conditions.
+## Differential expression
 
-### Replicate correlation
+DEG counts per contrast (padj < 0.05 & |log2FC| ≥ 1):
 
-![Sample correlation heatmap](figures/qc_correlation_allsamples.png)
+| Contrast (B vs A) | DESeq2 (counts) | limma (TPM) | limma (FPKM) |
+|-------------------|:---------------:|:-----------:|:------------:|
+| dark_light vs black_light  | 1,989 | 1,965 | 1,743 |
+| control vs black_light     |   753 |   780 |   639 |
+| low_light vs black_light   | 2,721 | 2,877 | 2,681 |
+| control vs dark_light      | 1,219 | 1,116 |   950 |
+| low_light vs dark_light    |   631 |   617 |   526 |
+| low_light vs control       | 1,639 | 1,634 | 1,436 |
 
-### Library size & gene detection
+Across DESeq2 contrasts: **3,525 unique DEGs**; 479 shared across the three
+light-vs-black contrasts; **42 DE in all six**. The three quantification
+methods agree well — pooled DESeq2-vs-limma(TPM) log2FC Pearson r = **0.94**,
+with 48–65% three-way overlap of significant genes per contrast.
 
-![Library size and gene detection](figures/qc_libsize_detection_allsamples.png)
-
-9,100–9,600 genes detected (TPM > 1) per library, uniform across conditions.
-
-### Mapping summary
-
-Full table: [`matrices/mapping_alignment_summary_12samples.csv`](matrices/mapping_alignment_summary_12samples.csv)
-
-| sample | Salmon %mapped | HISAT2 overall | HISAT2 multimap |
-|---|---|---|---|
-| B10_S1  | 80.6% | 97.5% | 2.2% |
-| B11_S2  | 82.6% | 97.5% | 0.5% |
-| B12_S3  | 55.2% | 97.4% | 30.0% |
-| D10_S4  | 82.6% | 97.7% | 1.2% |
-| D11_S5  | 83.3% | 97.9% | 1.8% |
-| D12_S6  | 81.9% | 97.8% | 1.6% |
-| H13_S7  | 81.1% | 97.5% | 0.7% |
-| H14_S8  | 83.1% | 97.6% | 0.6% |
-| H15_S9  | 81.2% | 97.7% | 1.5% |
-| L13_S10 | 85.2% | 97.7% | 0.5% |
-| L14_S11 | 85.3% | 97.7% | 0.5% |
-| L15_S12 | 84.1% | 97.8% | 1.2% |
-
-> **Note on B12_S3:** aligns to the genome normally (97%) but has a low Salmon
-> transcriptome rate (55%) and 30% multimapping — indicating more
-> rRNA/repetitive/intergenic content. Despite this it clusters tightly with
-> B10/B11 on the PCA (expression profile intact), so it is retained.
-
----
-
-## Differential expression — 6 pairwise contrasts
-
-DESeq2 Wald test, apeglm-shrunk LFC. Significance: **padj < 0.05 AND
-|log2FC| ≥ 1**. In each `DE_<B>_vs_<A>.csv`, positive log2FoldChange = UP in
-the first-named (B) condition. 9,693 genes tested per contrast.
-
-![DEG counts across all six contrasts](figures/DEG_summary_barplot.png)
-
-| Contrast (B vs A) | Sig DEGs | Up in B | Down in B | Table |
-|---|---|---|---|---|
-| dark vs black  | 2,020 | 1,195 | 825   | [csv](de_results/DE_dark_light_vs_black_light.csv) |
-| high vs black  |   857 |   518 | 339   | [csv](de_results/DE_high_light_vs_black_light.csv) |
-| low vs black   | 2,590 | 1,475 | 1,115 | [csv](de_results/DE_low_light_vs_black_light.csv) |
-| high vs dark   | 1,308 |   585 | 723   | [csv](de_results/DE_high_light_vs_dark_light.csv) |
-| low vs dark    |   698 |   298 | 400   | [csv](de_results/DE_low_light_vs_dark_light.csv) |
-| low vs high    | 1,703 |   910 | 793   | [csv](de_results/DE_low_light_vs_high_light.csv) |
-
-Summary table: [`de_results/DE_summary.csv`](de_results/DE_summary.csv) ·
-Combined long table (every significant gene×contrast row):
-[`de_results/all_significant_DEGs_long.csv`](de_results/all_significant_DEGs_long.csv)
-
-### Global patterns
-
-- **3,330 unique genes** are DE in ≥1 contrast.
-- **561 core light-response genes** are shared across all three light-vs-black contrasts (dark/high/low each vs black) — a candidate core transcriptional response to illumination.
-- **43 genes** are DE in all six contrasts (distinguish every condition pair).
-- Low light drives the largest response vs black (2,590 DEGs); high light the smallest (857). Low-vs-dark is the most similar pair (698 DEGs).
-
-### Volcano plots
-
-| | |
-|---|---|
-| ![dark vs black](figures/volcano_dark_light_vs_black_light.png) | ![high vs black](figures/volcano_high_light_vs_black_light.png) |
-| ![low vs black](figures/volcano_low_light_vs_black_light.png) | ![high vs dark](figures/volcano_high_light_vs_dark_light.png) |
-| ![low vs dark](figures/volcano_low_light_vs_dark_light.png) | ![low vs high](figures/volcano_low_light_vs_high_light.png) |
-
-### MA plots
-
-| | |
-|---|---|
-| ![dark vs black](figures/MA_dark_light_vs_black_light.png) | ![high vs black](figures/MA_high_light_vs_black_light.png) |
-| ![low vs black](figures/MA_low_light_vs_black_light.png) | ![high vs dark](figures/MA_high_light_vs_dark_light.png) |
-| ![low vs dark](figures/MA_low_light_vs_dark_light.png) | ![low vs high](figures/MA_low_light_vs_high_light.png) |
-
----
+![Volcano plots](figures/volcano_counts_grid.png)
+![MA plots](figures/ma_counts_grid.png)
+![Method concordance](figures/method_concordance.png)
 
 ## Expression heatmaps
 
-Replicates merged by **per-condition mean TPM**; each gene row is a
-**z-score of log₂(mean TPM + 1)** across the four conditions, hierarchically
-clustered (average linkage, Euclidean distance). Blue = below a gene's mean,
-red = above. Columns ordered black · dark · high · low.
+Clustered heatmaps built from VST-transformed raw counts across **all 12,723
+expressed gene models**, row z-scored, Ward hierarchical clustering on both axes.
 
-### Top 60 most variable DEGs (labeled)
+![All gene models](figures/heatmap_all_genes_clustered.png)
+![DEG union](figures/heatmap_DEGs_clustered.png)
+![Top-50 variable DEGs](figures/heatmap_top50_DEGs_labeled.png)
 
-![Top 60 variable DEGs](figures/heatmap_top60_DEGs.png)
+## GO enrichment
 
-The 60 DEGs with the largest cross-condition variance, row-labeled with
-`FGSG_id` where available. Condition-specific up-regulated blocks are clearly
-resolved (e.g. a large low-light-specific cluster).
+Hypergeometric over-representation against the OmicsBox blast2go GAF
+(20230802), BP/MF/CC tested separately, BH-FDR, background = genes tested in
+each contrast. **168 significant GO terms** (padj < 0.05) across the six
+contrasts. The dominant enriched theme is oxidation-reduction (P450 /
+monooxygenase, heme/iron binding, catalase / hydrogen-peroxide catabolism —
+oxidative-stress detoxification) plus amino-acid transport.
 
-### All 3,330 DEGs (global structure)
+![GO dotplot](figures/go_dotplot.png)
 
-![All DEGs](figures/heatmap_allDEGs.png)
+## Genes of interest & treatment-vs-control overlap
 
-Every gene DE in ≥1 contrast (row labels omitted for density). Confirms the
-four conditions partition into coherent co-expression blocks.
+257 publication-derived genes of interest — all 257 present in the NCBI
+reference — were cross-referenced against the DE results; **141 are DEG in ≥1
+contrast**. Treatment-vs-control DEG overlap (DESeq2): union 2,369 genes,
+**197 DEG in all three treatments** vs control.
 
----
+![Venn — treatment vs control](figures/venn_treatment_vs_control.png)
 
-## Condition overlap — Venn diagrams
+## Repository layout
 
-Genes are called **"expressed" in a condition when the mean expression across
-its 3 replicates meets a cutoff**, then the four resulting gene sets are
-intersected. This is an expression-occupancy view (where transcription is
-present), distinct from the DE analysis above (where transcription *changes*).
-Four cutoff instances are provided:
+### Documentation
+- [docs/README_ncbi_analysis.md](docs/README_ncbi_analysis.md) — detailed methods report
 
-| | |
-|---|---|
-| ![Venn TPM≥1](figures/venn4_TPM_ge1.png) | ![Venn TPM≥5](figures/venn4_TPM_ge5.png) |
-| ![Venn TPM≥10](figures/venn4_TPM_ge10.png) | ![Venn FPKM≥5](figures/venn4_FPKM_ge5.png) |
+### Reference (`data/reference/`)
+- [ref_gene_table.csv](data/reference/ref_gene_table.csv) — gene_id, chrom, coords, biotype, product
+- [tx2gene.tsv](data/reference/tx2gene.tsv) — transcript→gene map
+- [fgsg_go_map.tsv](data/reference/fgsg_go_map.tsv) — gene→GO (from blast2go GAF)
+- [go_term_names.tsv](data/reference/go_term_names.tsv) — GO ID→name (EBI QuickGO)
 
-The large majority of genes are expressed in **all four** conditions
-(core transcriptome), with the biggest condition-restricted and pairwise
-compartments consistently involving **low light** and the **dark–low** pair.
-Region counts for all 15 subsets × 4 cutoffs:
-[`matrices/venn_region_counts.csv`](matrices/venn_region_counts.csv).
+### Expression matrices (`data/matrices/`) — 13,725 gene models × 12 libraries
+- [raw_counts.csv](data/matrices/raw_counts.csv) — featureCounts raw counts
+- [tpm_matrix.csv](data/matrices/tpm_matrix.csv) — StringTie TPM
+- [fpkm_matrix.csv](data/matrices/fpkm_matrix.csv) — StringTie FPKM
+- [normalized_counts.csv](data/matrices/normalized_counts.csv) — DESeq2 median-of-ratios
+- [vst_matrix.csv](data/matrices/vst_matrix.csv) — variance-stabilized (heatmap input)
 
-| Region | TPM≥1 | TPM≥5 | TPM≥10 | FPKM≥5 |
-|---|--:|--:|--:|--:|
-| **All four (core)** | 8,811 | 7,051 | 5,878 | 6,453 |
-| Dark & Low only | 212 | 310 | 359 | 325 |
-| Dark/High/Low | 252 | 315 | 326 | 274 |
-| Low only | 156 | 259 | 319 | 283 |
-| Black & High only | 99 | 92 | 70 | 85 |
-| Total expressed (≥1 condition) | 9,999 | 8,435 | 7,402 | 7,874 |
+### QC (`results/qc/`)
+- [fastp_summary.csv](results/qc/fastp_summary.csv) · [hisat2_alignment_summary.csv](results/qc/hisat2_alignment_summary.csv)
 
----
+### Differential expression
+- DESeq2 (raw counts): [`results/de_deseq2/`](results/de_deseq2/) — 6 per-contrast tables + [DE_summary_counts.csv](results/de_deseq2/DE_summary_counts.csv) + [all_significant_DEGs_long.csv](results/de_deseq2/all_significant_DEGs_long.csv)
+- limma-trend (TPM): [`results/de_tpm/`](results/de_tpm/) — 6 tables + [DE_summary_tpm.csv](results/de_tpm/DE_summary_tpm.csv)
+- limma-trend (FPKM): [`results/de_fpkm/`](results/de_fpkm/) — 6 tables + [DE_summary_fpkm.csv](results/de_fpkm/DE_summary_fpkm.csv)
+- Cross-method: [results/concordance/method_concordance.csv](results/concordance/method_concordance.csv)
 
-## FGSG cross-reference
+### GO enrichment (`results/go/`)
+- [GO_enrichment_all_contrasts.csv](results/go/GO_enrichment_all_contrasts.csv) · [GO_enrichment_significant.csv](results/go/GO_enrichment_significant.csv) + 6 per-contrast tables
 
-The funannotate annotation uses custom `FGRAM000v1_` gene IDs. Legacy Broad
-Institute `FGSG_` identifiers were parsed **authoritatively from the GFF3
-`product=` field** (the only species-specific source of this mapping) and
-folded back into every gene-level table as an `FGSG_id` column.
+### Genes of interest (`results/genes_of_interest/`)
+- [GOI_expression_DESeq2_6contrasts.xlsx](results/genes_of_interest/GOI_expression_DESeq2_6contrasts.xlsx) — 6 contrasts, DESeq2
+- [GOI_expression_template_3contrasts_FPKM.xlsx](results/genes_of_interest/GOI_expression_template_3contrasts_FPKM.xlsx) — CLC-style template, 3 contrasts, FPKM
+- [GOI_expression_all_methods_6contrasts.xlsx](results/genes_of_interest/GOI_expression_all_methods_6contrasts.xlsx) — 6 contrasts × 3 methods
+- [GOI_expression_long_all_methods.csv](results/genes_of_interest/GOI_expression_long_all_methods.csv) · [GOI_overlap_by_category.csv](results/genes_of_interest/GOI_overlap_by_category.csv)
 
-Full mapping table:
-[`matrices/fgram_fgsg_crossref.csv`](matrices/fgram_fgsg_crossref.csv)
-— columns `gene_id, FGSG_id, product, fgsg_shared_with_other_gene`.
+### Venn membership (`results/venn/`)
+- [venn_treatment_vs_control_membership.csv](results/venn/venn_treatment_vs_control_membership.csv)
 
-- **1,903 of 13,377 genes** carry an `FGSG_id`; the remaining genes have no
-  legacy equivalent in this annotation (blank in the column). No external
-  extension is possible because the `FGRAM000v1_` scheme is custom to this build.
-- The mapping is **1:1** for all matched genes — **0 conflicts**.
-- **5 FGSG IDs are each shared by 2 consecutive FGRAM genes** (legacy models
-  that funannotate split into two). Both genes are kept and flagged
-  `fgsg_shared_with_other_gene = True`.
+### Figures (`figures/`)
+All 12 PNGs referenced above.
 
----
+## Tool versions
 
-## Data files
+fastp 1.1.0 · HISAT2 2.2.2 · samtools 1.22.1 · subread/featureCounts 2.1.1 ·
+StringTie 3.0.3 · DESeq2 (R 4.5.3) + apeglm · limma · pheatmap
 
-All gene-level matrices below carry an `FGSG_id` column after `gene_id`.
+## License
 
-- [`gene_counts_salmon.csv`](matrices/gene_counts_salmon.csv) — gene × 12 samples estimated counts (DESeq2 input)
-- [`gene_TPM_salmon.csv`](matrices/gene_TPM_salmon.csv) — gene × 12 samples TPM (Salmon)
-- [`stringtie_TPM_matrix.csv`](matrices/stringtie_TPM_matrix.csv), [`stringtie_FPKM_matrix.csv`](matrices/stringtie_FPKM_matrix.csv) — with gene coordinates
-- [`normalized_counts_allsamples.csv`](matrices/normalized_counts_allsamples.csv) — DESeq2 median-of-ratios normalized
-- [`vst_allsamples.csv`](matrices/vst_allsamples.csv) — variance-stabilized values
-- [`pca_allsamples.csv`](matrices/pca_allsamples.csv), [`sample_correlation_allsamples.csv`](matrices/sample_correlation_allsamples.csv)
-- [`fgram_fgsg_crossref.csv`](matrices/fgram_fgsg_crossref.csv) — FGRAM000v1_ ↔ FGSG_ mapping + product + split-gene flag
-- [`venn_region_counts.csv`](matrices/venn_region_counts.csv) — Venn region counts (15 subsets × 4 cutoffs)
-
-### Scripts ([`scripts/`](scripts))
-- [`run_pairwise_DE.R`](scripts/run_pairwise_DE.R) — automated all-pairwise DESeq2 (Wald + apeglm), volcano + MA per contrast
-- [`qc_allsamples.R`](scripts/qc_allsamples.R) — VST, PCA, correlation, library QC
-- [`condition_metadata_template.tsv`](scripts/condition_metadata_template.tsv) — sample-sheet template
-
-Re-run all DE:
-```bash
-Rscript scripts/run_pairwise_DE.R samples.tsv salmon/ tx2gene.tsv de/
-```
-
-## Reproducibility
-
-- conda env `rnaseq` (osx-arm64): alignment/quant tools
-- conda env `deseq` (R 4.5.3): DESeq2 stack
-- Sorted BAMs (`<sample>.sorted.bam`, for IGV) are produced by the pipeline but not included here due to size.
+Released under the MIT License — see [LICENSE](LICENSE).
