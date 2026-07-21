@@ -1,0 +1,9 @@
+category,n_genes,n_DEG_ge1_contrast,pct_DEG
+Metabolism,88,43,48.9
+Toxins,49,24,49.0
+effector,48,21,43.8
+Pathogenicity,34,26,76.5
+Pigment,23,16,69.6
+Photoreceptors,10,7,70.0
+cellulase/amylase/nitrogen/pigment,3,3,100.0
+toxin/pyrone,2,1,50.0

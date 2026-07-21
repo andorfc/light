@@ -1,0 +1,7 @@
+"contrast","tested","sig","up_in_B","down_in_B"
+"dark_light vs black_light",10192,1965,1514,451
+"control vs black_light",10192,780,574,206
+"low_light vs black_light",10192,2877,2260,617
+"control vs dark_light",10192,1116,422,694
+"low_light vs dark_light",10192,617,310,307
+"low_light vs control",10192,1634,1132,502
