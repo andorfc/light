@@ -1,0 +1,735 @@
+GO,go_name,namespace,padj,gene_id,role,GOI_category
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_09280,GOI,Metabolism
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_10444,GOI,Metabolism
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_05368,GOI,Pathogenicity
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_08493,GOI,Effectors
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_04593,GOI,Pathogenicity
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_02824,candidate_seed,
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_01422,GOI,Metabolism
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_02271,GOI,Metabolism
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_02030,GOI,Metabolism
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_03061,GOI,Pigment
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_04596,GOI,Pathogenicity
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_12222,GOI,Pathogenicity
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_13136,GOI,Metabolism
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_02272,GOI,Metabolism
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_00765,GOI,Metabolism
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_04589,GOI,Pathogenicity
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_08601,GOI,Metabolism
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_04588,GOI,Pathogenicity
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_04592,GOI,Pathogenicity
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_03992,GOI,Metabolism
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_04490,GOI,Effectors
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_02461,GOI,Metabolism
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_09456,GOI,Metabolism
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_09826,GOI,Effectors
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_06055,GOI,Metabolism
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_05610,GOI,Metabolism
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_02972,GOI,Photoreceptors
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_04458,GOI,Metabolism
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_07075,GOI,Metabolism
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_03894,GOI,Effectors
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_00743,GOI,Metabolism
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_02554,GOI,Metabolism
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_03340,GOI,Toxins
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_03547,GOI,Toxins
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_02823,candidate_seed,
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_10947,GOI,Metabolism
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_09834,GOI,Metabolism
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_09012,GOI,Metabolism
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_04591,GOI,Pathogenicity
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_12223,GOI,Pathogenicity
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_12180,GOI,Metabolism
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_00330,GOI,Metabolism
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_10347,GOI,Metabolism
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_04590,GOI,Pathogenicity
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_08774,GOI,Metabolism
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_03546,GOI,Toxins
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_10922,GOI,Pathogenicity
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_08712,GOI,Metabolism
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_03548,GOI,Toxins
+GO:0004622,phosphatidylcholine lysophospholipase A1 activity,MF,0.0043,FGSG_03747,GOI,Pathogenicity
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_09280,GOI,Metabolism
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_10444,GOI,Metabolism
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_05368,GOI,Pathogenicity
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_08493,GOI,Effectors
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_04593,GOI,Pathogenicity
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_02824,candidate_seed,
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_01422,GOI,Metabolism
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_02271,GOI,Metabolism
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_02030,GOI,Metabolism
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_03061,GOI,Pigment
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_04596,GOI,Pathogenicity
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_12222,GOI,Pathogenicity
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_13136,GOI,Metabolism
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_02272,GOI,Metabolism
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_00765,GOI,Metabolism
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_04589,GOI,Pathogenicity
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_08601,GOI,Metabolism
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_04588,GOI,Pathogenicity
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_04592,GOI,Pathogenicity
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_03992,GOI,Metabolism
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_04490,GOI,Effectors
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_02461,GOI,Metabolism
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_09456,GOI,Metabolism
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_09826,GOI,Effectors
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_06055,GOI,Metabolism
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_05610,GOI,Metabolism
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_02972,GOI,Photoreceptors
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_04458,GOI,Metabolism
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_07075,GOI,Metabolism
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_03894,GOI,Effectors
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_00743,GOI,Metabolism
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_02554,GOI,Metabolism
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_03340,GOI,Toxins
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_03547,GOI,Toxins
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_02823,candidate_seed,
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_10947,GOI,Metabolism
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_09834,GOI,Metabolism
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_09012,GOI,Metabolism
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_04591,GOI,Pathogenicity
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_12223,GOI,Pathogenicity
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_12180,GOI,Metabolism
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_00330,GOI,Metabolism
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_10347,GOI,Metabolism
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_04590,GOI,Pathogenicity
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_08774,GOI,Metabolism
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_03546,GOI,Toxins
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_10922,GOI,Pathogenicity
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_08712,GOI,Metabolism
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_03548,GOI,Toxins
+GO:0009395,phospholipid catabolic process,BP,0.0043,FGSG_03747,GOI,Pathogenicity
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_10444,GOI,Metabolism
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_08493,GOI,Effectors
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_05368,GOI,Pathogenicity
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_04593,GOI,Pathogenicity
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_01422,GOI,Metabolism
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_02271,GOI,Metabolism
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_02030,GOI,Metabolism
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_03061,GOI,Pigment
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_12222,GOI,Pathogenicity
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_13136,GOI,Metabolism
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_02272,GOI,Metabolism
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_00765,GOI,Metabolism
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_04589,GOI,Pathogenicity
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_08601,GOI,Metabolism
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_04588,GOI,Pathogenicity
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_04592,GOI,Pathogenicity
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_03992,GOI,Metabolism
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_03026,candidate_seed,
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_02461,GOI,Metabolism
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_09456,GOI,Metabolism
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_08425,candidate_seed,
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_09826,GOI,Effectors
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_06055,GOI,Metabolism
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_05610,GOI,Metabolism
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_02972,GOI,Photoreceptors
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_04458,GOI,Metabolism
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_07075,GOI,Metabolism
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_03894,GOI,Effectors
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_00743,GOI,Metabolism
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_02554,GOI,Metabolism
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_10947,GOI,Metabolism
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_09834,GOI,Metabolism
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_09012,GOI,Metabolism
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_04591,GOI,Pathogenicity
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_12223,GOI,Pathogenicity
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_12180,GOI,Metabolism
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_00330,GOI,Metabolism
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_10347,GOI,Metabolism
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_04590,GOI,Pathogenicity
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_08774,GOI,Metabolism
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_11206,GOI,Pathogenicity
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_03546,GOI,Toxins
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_10922,GOI,Pathogenicity
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_08712,GOI,Metabolism
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_03548,GOI,Toxins
+GO:0051536,iron-sulfur cluster binding,MF,0.0043,FGSG_03747,GOI,Pathogenicity
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_03881,GOI,Pathogenicity
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_09280,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_11184,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_05368,GOI,Pathogenicity
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_02824,candidate_seed,
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_03061,GOI,Pigment
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_13136,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_02272,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_04588,GOI,Pathogenicity
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_04592,GOI,Pathogenicity
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_03992,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_04490,GOI,Effectors
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_00007,GOI,Toxins
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_02840,GOI,Effectors
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_02903,GOI,Effectors
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_02554,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_03547,GOI,Toxins
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_03842,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_02823,candidate_seed,
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_00330,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_10347,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_01866,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_03541,GOI,Toxins
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_08712,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_03548,GOI,Toxins
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_03747,GOI,Pathogenicity
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_10444,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_04593,GOI,Pathogenicity
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_02323,GOI,Pigment
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_05919,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_02271,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_08083,GOI,Toxins
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_06257,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_02327,GOI,Pigment
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_03894,GOI,Effectors
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_04591,GOI,Pathogenicity
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_09012,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_03306,candidate_seed,
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_04763,GOI,Effectors
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_03599,GOI,Toxins
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_11326,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_10670,GOI,Effectors
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_08493,GOI,Effectors
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_01422,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_08082,GOI,Toxins
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_12222,GOI,Pathogenicity
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_00765,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_08601,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_03539,GOI,Toxins
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_02077,GOI,Effectors
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_09187,GOI,Pigment
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_02461,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_09456,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_06055,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_02324,GOI,Pigment
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_02972,GOI,Photoreceptors
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_02321,GOI,Pigment
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_03295,GOI,Effectors
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_07075,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_10947,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_12223,GOI,Pathogenicity
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_12180,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_02320,GOI,Pigment
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_06468,candidate_seed,
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_04590,GOI,Pathogenicity
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_03546,GOI,Toxins
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_11206,GOI,Pathogenicity
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_13952,GOI,Effectors
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_07528,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_08795,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_02326,GOI,Pigment
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_02030,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_04596,GOI,Pathogenicity
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_09210,candidate_seed,
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_02328,GOI,Pigment
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_04589,GOI,Pathogenicity
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_02281,candidate_seed,
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_08081,GOI,Toxins
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_03600,GOI,Effectors
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_04188,candidate_seed,
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_09826,GOI,Effectors
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_05610,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_04458,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_00743,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_03340,GOI,Toxins
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_02782,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_09834,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_02255,GOI,Effectors
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_02325,GOI,Pigment
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_08774,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_05843,GOI,Metabolism
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_02329,GOI,Pigment
+GO:0055085,transmembrane transport,BP,0.0098,FGSG_10922,GOI,Pathogenicity
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_03881,GOI,Pathogenicity
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_11326,GOI,Metabolism
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_11184,GOI,Metabolism
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_10670,GOI,Effectors
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_02326,GOI,Pigment
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_02323,GOI,Pigment
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_05919,GOI,Metabolism
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_08082,GOI,Toxins
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_03543,GOI,Toxins
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_02328,GOI,Pigment
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_03539,GOI,Toxins
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_08081,GOI,Toxins
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_08083,GOI,Toxins
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_02077,GOI,Effectors
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_09187,GOI,Pigment
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_03574,GOI,Effectors
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_00007,GOI,Toxins
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_07530,candidate_seed,
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_03600,GOI,Effectors
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_03638,candidate_seed,
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_02840,GOI,Effectors
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_03532,GOI,Toxins
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_02324,GOI,Pigment
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_02327,GOI,Pigment
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_02321,GOI,Pigment
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_02903,GOI,Effectors
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_13840,candidate_seed,
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_09064,GOI,Metabolism
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_03842,GOI,Metabolism
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_02255,GOI,Effectors
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_02325,GOI,Pigment
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_02320,GOI,Pigment
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_01866,GOI,Metabolism
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_03541,GOI,Toxins
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_02329,GOI,Pigment
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_13952,GOI,Effectors
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_03599,GOI,Toxins
+GO:0050660,flavin adenine dinucleotide binding,MF,0.0362,FGSG_08795,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_03881,GOI,Pathogenicity
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_09280,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_11184,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_03535,GOI,Toxins
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_05368,GOI,Pathogenicity
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_02824,candidate_seed,
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_03061,GOI,Pigment
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_13136,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_02272,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_04588,GOI,Pathogenicity
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_04592,GOI,Pathogenicity
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_03992,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_08084,GOI,Toxins
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_11888,candidate_seed,
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_04490,GOI,Effectors
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_03574,GOI,Effectors
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_00007,GOI,Toxins
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_02840,GOI,Effectors
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_05348,candidate_seed,
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_02903,GOI,Effectors
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_02554,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_03547,GOI,Toxins
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_03842,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_02823,candidate_seed,
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_00330,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_10347,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_01866,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_03541,GOI,Toxins
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_08712,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_03548,GOI,Toxins
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_03747,GOI,Pathogenicity
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_10444,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_04593,GOI,Pathogenicity
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_02323,GOI,Pigment
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_05919,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_02271,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_08083,GOI,Toxins
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_06257,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_02327,GOI,Pigment
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_03894,GOI,Effectors
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_08695,candidate_seed,
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_09064,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_04591,GOI,Pathogenicity
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_09012,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_03306,candidate_seed,
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_06039,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_04763,GOI,Effectors
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_10802,candidate_seed,
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_03599,GOI,Toxins
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_11326,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_10670,GOI,Effectors
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_08493,GOI,Effectors
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_01422,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_08082,GOI,Toxins
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_12222,GOI,Pathogenicity
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_00765,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_08079,GOI,Toxins
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_08601,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_03539,GOI,Toxins
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_02077,GOI,Effectors
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_09187,GOI,Pigment
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_02461,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_09456,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_04696,candidate_seed,
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_01379,candidate_seed,
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_06055,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_02324,GOI,Pigment
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_02972,GOI,Photoreceptors
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_02321,GOI,Pigment
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_03295,GOI,Effectors
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_07075,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_10947,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_01823,candidate_seed,
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_12223,GOI,Pathogenicity
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_12180,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_12211,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_02320,GOI,Pigment
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_06468,candidate_seed,
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_04590,GOI,Pathogenicity
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_03546,GOI,Toxins
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_11206,GOI,Pathogenicity
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_13952,GOI,Effectors
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_01580,candidate_seed,
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_07528,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_08795,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_02326,GOI,Pigment
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_07896,GOI,Toxins
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_02030,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_04596,GOI,Pathogenicity
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_09210,candidate_seed,
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_03543,GOI,Toxins
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_01149,candidate_seed,
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_02328,GOI,Pigment
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_04589,GOI,Pathogenicity
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_02281,candidate_seed,
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_08081,GOI,Toxins
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_03600,GOI,Effectors
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_04188,candidate_seed,
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_03532,GOI,Toxins
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_09826,GOI,Effectors
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_05610,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_04458,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_00743,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_03340,GOI,Toxins
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_02782,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_09834,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_02255,GOI,Effectors
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_02325,GOI,Pigment
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_08774,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_05843,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_02329,GOI,Pigment
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_10922,GOI,Pathogenicity
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_01621,GOI,Metabolism
+GO:0016021,integral component of membrane,CC,0.0366,FGSG_06508,candidate_seed,
+GO:0005576,extracellular region,CC,0.0502,FGSG_03881,GOI,Pathogenicity
+GO:0005576,extracellular region,CC,0.0502,FGSG_11326,GOI,Metabolism
+GO:0005576,extracellular region,CC,0.0502,FGSG_10670,GOI,Effectors
+GO:0005576,extracellular region,CC,0.0502,FGSG_11184,GOI,Metabolism
+GO:0005576,extracellular region,CC,0.0502,FGSG_02326,GOI,Pigment
+GO:0005576,extracellular region,CC,0.0502,FGSG_02323,GOI,Pigment
+GO:0005576,extracellular region,CC,0.0502,FGSG_05919,GOI,Metabolism
+GO:0005576,extracellular region,CC,0.0502,FGSG_07896,GOI,Toxins
+GO:0005576,extracellular region,CC,0.0502,FGSG_08082,GOI,Toxins
+GO:0005576,extracellular region,CC,0.0502,FGSG_03543,GOI,Toxins
+GO:0005576,extracellular region,CC,0.0502,FGSG_02328,GOI,Pigment
+GO:0005576,extracellular region,CC,0.0502,FGSG_03539,GOI,Toxins
+GO:0005576,extracellular region,CC,0.0502,FGSG_08081,GOI,Toxins
+GO:0005576,extracellular region,CC,0.0502,FGSG_08083,GOI,Toxins
+GO:0005576,extracellular region,CC,0.0502,FGSG_02077,GOI,Effectors
+GO:0005576,extracellular region,CC,0.0502,FGSG_09187,GOI,Pigment
+GO:0005576,extracellular region,CC,0.0502,FGSG_03574,GOI,Effectors
+GO:0005576,extracellular region,CC,0.0502,FGSG_07741,candidate_seed,
+GO:0005576,extracellular region,CC,0.0502,FGSG_00007,GOI,Toxins
+GO:0005576,extracellular region,CC,0.0502,FGSG_03600,GOI,Effectors
+GO:0005576,extracellular region,CC,0.0502,FGSG_02840,GOI,Effectors
+GO:0005576,extracellular region,CC,0.0502,FGSG_03532,GOI,Toxins
+GO:0005576,extracellular region,CC,0.0502,FGSG_02324,GOI,Pigment
+GO:0005576,extracellular region,CC,0.0502,FGSG_02327,GOI,Pigment
+GO:0005576,extracellular region,CC,0.0502,FGSG_02321,GOI,Pigment
+GO:0005576,extracellular region,CC,0.0502,FGSG_02903,GOI,Effectors
+GO:0005576,extracellular region,CC,0.0502,FGSG_03842,GOI,Metabolism
+GO:0005576,extracellular region,CC,0.0502,FGSG_02314,candidate_seed,
+GO:0005576,extracellular region,CC,0.0502,FGSG_02255,GOI,Effectors
+GO:0005576,extracellular region,CC,0.0502,FGSG_12211,GOI,Metabolism
+GO:0005576,extracellular region,CC,0.0502,FGSG_02325,GOI,Pigment
+GO:0005576,extracellular region,CC,0.0502,FGSG_02320,GOI,Pigment
+GO:0005576,extracellular region,CC,0.0502,FGSG_01866,GOI,Metabolism
+GO:0005576,extracellular region,CC,0.0502,FGSG_03541,GOI,Toxins
+GO:0005576,extracellular region,CC,0.0502,FGSG_02329,GOI,Pigment
+GO:0005576,extracellular region,CC,0.0502,FGSG_13952,GOI,Effectors
+GO:0005576,extracellular region,CC,0.0502,FGSG_08795,GOI,Metabolism
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_03881,GOI,Pathogenicity
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_11326,GOI,Metabolism
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_11184,GOI,Metabolism
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_10670,GOI,Effectors
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_02326,GOI,Pigment
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_02323,GOI,Pigment
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_05919,GOI,Metabolism
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_08082,GOI,Toxins
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_03543,GOI,Toxins
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_02328,GOI,Pigment
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_03539,GOI,Toxins
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_08081,GOI,Toxins
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_08083,GOI,Toxins
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_09187,GOI,Pigment
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_00007,GOI,Toxins
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_03600,GOI,Effectors
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_03638,candidate_seed,
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_02840,GOI,Effectors
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_03532,GOI,Toxins
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_02324,GOI,Pigment
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_02327,GOI,Pigment
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_02321,GOI,Pigment
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_02903,GOI,Effectors
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_13840,candidate_seed,
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_09064,GOI,Metabolism
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_03842,GOI,Metabolism
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_02255,GOI,Effectors
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_02325,GOI,Pigment
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_02320,GOI,Pigment
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_01866,GOI,Metabolism
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_03541,GOI,Toxins
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_02329,GOI,Pigment
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_13952,GOI,Effectors
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_03599,GOI,Toxins
+GO:0016614,"oxidoreductase activity, acting on CH-OH group of donors",MF,0.0502,FGSG_08795,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_03881,GOI,Pathogenicity
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_11184,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_03535,GOI,Toxins
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_05368,GOI,Pathogenicity
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_03061,GOI,Pigment
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_13136,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_02272,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_04588,GOI,Pathogenicity
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_04592,GOI,Pathogenicity
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_03992,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_08084,GOI,Toxins
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_02267,candidate_seed,
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_03574,GOI,Effectors
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_00007,GOI,Toxins
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_02840,GOI,Effectors
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_02903,GOI,Effectors
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_02554,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_03842,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_00330,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_10347,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_01866,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_03541,GOI,Toxins
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_08712,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_03548,GOI,Toxins
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_03747,GOI,Pathogenicity
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_10444,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_04593,GOI,Pathogenicity
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_02323,GOI,Pigment
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_05919,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_02271,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_08083,GOI,Toxins
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_03638,candidate_seed,
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_02327,GOI,Pigment
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_03894,GOI,Effectors
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_09064,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_04591,GOI,Pathogenicity
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_09012,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_03599,GOI,Toxins
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_11326,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_10670,GOI,Effectors
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_08493,GOI,Effectors
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_01422,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_08082,GOI,Toxins
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_12222,GOI,Pathogenicity
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_00765,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_08601,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_03539,GOI,Toxins
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_03026,candidate_seed,
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_02077,GOI,Effectors
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_09187,GOI,Pigment
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_02461,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_09456,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_06055,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_02324,GOI,Pigment
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_02972,GOI,Photoreceptors
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_02321,GOI,Pigment
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_11270,candidate_seed,
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_07075,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_07683,candidate_seed,
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_10947,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_12223,GOI,Pathogenicity
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_12180,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_12211,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_02320,GOI,Pigment
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_04590,GOI,Pathogenicity
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_03546,GOI,Toxins
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_11206,GOI,Pathogenicity
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_13952,GOI,Effectors
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_08795,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_02326,GOI,Pigment
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_07896,GOI,Toxins
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_02030,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_03543,GOI,Toxins
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_02328,GOI,Pigment
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_04589,GOI,Pathogenicity
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_08081,GOI,Toxins
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_07530,candidate_seed,
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_03600,GOI,Effectors
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_08425,candidate_seed,
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_03532,GOI,Toxins
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_09826,GOI,Effectors
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_05610,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_04458,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_00743,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_13840,candidate_seed,
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_09834,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_02255,GOI,Effectors
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_02325,GOI,Pigment
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_08774,GOI,Metabolism
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_02329,GOI,Pigment
+GO:0055114,obsolete oxidation-reduction process,BP,0.0588,FGSG_10922,GOI,Pathogenicity
+GO:0006508,proteolysis,BP,0.2323,FGSG_03881,GOI,Pathogenicity
+GO:0006508,proteolysis,BP,0.2323,FGSG_11326,GOI,Metabolism
+GO:0006508,proteolysis,BP,0.2323,FGSG_10670,GOI,Effectors
+GO:0006508,proteolysis,BP,0.2323,FGSG_02326,GOI,Pigment
+GO:0006508,proteolysis,BP,0.2323,FGSG_02323,GOI,Pigment
+GO:0006508,proteolysis,BP,0.2323,FGSG_05919,GOI,Metabolism
+GO:0006508,proteolysis,BP,0.2323,FGSG_02328,GOI,Pigment
+GO:0006508,proteolysis,BP,0.2323,FGSG_11073,candidate_seed,
+GO:0006508,proteolysis,BP,0.2323,FGSG_08083,GOI,Toxins
+GO:0006508,proteolysis,BP,0.2323,FGSG_02077,GOI,Effectors
+GO:0006508,proteolysis,BP,0.2323,FGSG_09187,GOI,Pigment
+GO:0006508,proteolysis,BP,0.2323,FGSG_03574,GOI,Effectors
+GO:0006508,proteolysis,BP,0.2323,FGSG_00007,GOI,Toxins
+GO:0006508,proteolysis,BP,0.2323,FGSG_02840,GOI,Effectors
+GO:0006508,proteolysis,BP,0.2323,FGSG_02324,GOI,Pigment
+GO:0006508,proteolysis,BP,0.2323,FGSG_02327,GOI,Pigment
+GO:0006508,proteolysis,BP,0.2323,FGSG_02321,GOI,Pigment
+GO:0006508,proteolysis,BP,0.2323,FGSG_02903,GOI,Effectors
+GO:0006508,proteolysis,BP,0.2323,FGSG_03842,GOI,Metabolism
+GO:0006508,proteolysis,BP,0.2323,FGSG_02314,candidate_seed,
+GO:0006508,proteolysis,BP,0.2323,FGSG_02255,GOI,Effectors
+GO:0006508,proteolysis,BP,0.2323,FGSG_12211,GOI,Metabolism
+GO:0006508,proteolysis,BP,0.2323,FGSG_02325,GOI,Pigment
+GO:0006508,proteolysis,BP,0.2323,FGSG_02320,GOI,Pigment
+GO:0006508,proteolysis,BP,0.2323,FGSG_01866,GOI,Metabolism
+GO:0006508,proteolysis,BP,0.2323,FGSG_02329,GOI,Pigment
+GO:0006508,proteolysis,BP,0.2323,FGSG_13952,GOI,Effectors
+GO:0006508,proteolysis,BP,0.2323,FGSG_08795,GOI,Metabolism
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_03881,GOI,Pathogenicity
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_11184,GOI,Metabolism
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_03535,GOI,Toxins
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_05368,GOI,Pathogenicity
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_03061,GOI,Pigment
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_13136,GOI,Metabolism
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_02272,GOI,Metabolism
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_04588,GOI,Pathogenicity
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_04592,GOI,Pathogenicity
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_03992,GOI,Metabolism
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_02267,candidate_seed,
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_00007,GOI,Toxins
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_02840,GOI,Effectors
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_02554,GOI,Metabolism
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_03842,GOI,Metabolism
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_00330,GOI,Metabolism
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_10347,GOI,Metabolism
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_01866,GOI,Metabolism
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_03541,GOI,Toxins
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_08712,GOI,Metabolism
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_03548,GOI,Toxins
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_03747,GOI,Pathogenicity
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_10444,GOI,Metabolism
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_04593,GOI,Pathogenicity
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_02323,GOI,Pigment
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_02271,GOI,Metabolism
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_08083,GOI,Toxins
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_02327,GOI,Pigment
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_03894,GOI,Effectors
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_04591,GOI,Pathogenicity
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_09012,GOI,Metabolism
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_11326,GOI,Metabolism
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_10670,GOI,Effectors
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_08493,GOI,Effectors
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_01422,GOI,Metabolism
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_08082,GOI,Toxins
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_12222,GOI,Pathogenicity
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_00765,GOI,Metabolism
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_08601,GOI,Metabolism
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_03539,GOI,Toxins
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_09187,GOI,Pigment
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_02461,GOI,Metabolism
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_09456,GOI,Metabolism
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_06055,GOI,Metabolism
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_02324,GOI,Pigment
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_02972,GOI,Photoreceptors
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_02321,GOI,Pigment
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_07075,GOI,Metabolism
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_07683,candidate_seed,
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_10947,GOI,Metabolism
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_12223,GOI,Pathogenicity
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_12180,GOI,Metabolism
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_04590,GOI,Pathogenicity
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_03546,GOI,Toxins
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_11206,GOI,Pathogenicity
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_13952,GOI,Effectors
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_08795,GOI,Metabolism
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_02326,GOI,Pigment
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_07896,GOI,Toxins
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_02030,GOI,Metabolism
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_03543,GOI,Toxins
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_02328,GOI,Pigment
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_04589,GOI,Pathogenicity
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_08081,GOI,Toxins
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_03600,GOI,Effectors
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_08425,candidate_seed,
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_03532,GOI,Toxins
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_09826,GOI,Effectors
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_05610,GOI,Metabolism
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_04458,GOI,Metabolism
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_00743,GOI,Metabolism
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_09834,GOI,Metabolism
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_02255,GOI,Effectors
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_02325,GOI,Pigment
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_08774,GOI,Metabolism
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_02329,GOI,Pigment
+GO:0016491,oxidoreductase activity,MF,0.2323,FGSG_10922,GOI,Pathogenicity
+GO:0008152,metabolic process,BP,0.2378,FGSG_03881,GOI,Pathogenicity
+GO:0008152,metabolic process,BP,0.2378,FGSG_11326,GOI,Metabolism
+GO:0008152,metabolic process,BP,0.2378,FGSG_11184,GOI,Metabolism
+GO:0008152,metabolic process,BP,0.2378,FGSG_10670,GOI,Effectors
+GO:0008152,metabolic process,BP,0.2378,FGSG_02326,GOI,Pigment
+GO:0008152,metabolic process,BP,0.2378,FGSG_03535,GOI,Toxins
+GO:0008152,metabolic process,BP,0.2378,FGSG_02323,GOI,Pigment
+GO:0008152,metabolic process,BP,0.2378,FGSG_05919,GOI,Metabolism
+GO:0008152,metabolic process,BP,0.2378,FGSG_07896,GOI,Toxins
+GO:0008152,metabolic process,BP,0.2378,FGSG_08082,GOI,Toxins
+GO:0008152,metabolic process,BP,0.2378,FGSG_03543,GOI,Toxins
+GO:0008152,metabolic process,BP,0.2378,FGSG_02328,GOI,Pigment
+GO:0008152,metabolic process,BP,0.2378,FGSG_08079,GOI,Toxins
+GO:0008152,metabolic process,BP,0.2378,FGSG_03539,GOI,Toxins
+GO:0008152,metabolic process,BP,0.2378,FGSG_08084,GOI,Toxins
+GO:0008152,metabolic process,BP,0.2378,FGSG_08081,GOI,Toxins
+GO:0008152,metabolic process,BP,0.2378,FGSG_08083,GOI,Toxins
+GO:0008152,metabolic process,BP,0.2378,FGSG_09187,GOI,Pigment
+GO:0008152,metabolic process,BP,0.2378,FGSG_00007,GOI,Toxins
+GO:0008152,metabolic process,BP,0.2378,FGSG_03600,GOI,Effectors
+GO:0008152,metabolic process,BP,0.2378,FGSG_02840,GOI,Effectors
+GO:0008152,metabolic process,BP,0.2378,FGSG_03532,GOI,Toxins
+GO:0008152,metabolic process,BP,0.2378,FGSG_01379,candidate_seed,
+GO:0008152,metabolic process,BP,0.2378,FGSG_02324,GOI,Pigment
+GO:0008152,metabolic process,BP,0.2378,FGSG_02327,GOI,Pigment
+GO:0008152,metabolic process,BP,0.2378,FGSG_02321,GOI,Pigment
+GO:0008152,metabolic process,BP,0.2378,FGSG_02903,GOI,Effectors
+GO:0008152,metabolic process,BP,0.2378,FGSG_09064,GOI,Metabolism
+GO:0008152,metabolic process,BP,0.2378,FGSG_03842,GOI,Metabolism
+GO:0008152,metabolic process,BP,0.2378,FGSG_01823,candidate_seed,
+GO:0008152,metabolic process,BP,0.2378,FGSG_02255,GOI,Effectors
+GO:0008152,metabolic process,BP,0.2378,FGSG_02325,GOI,Pigment
+GO:0008152,metabolic process,BP,0.2378,FGSG_01866,GOI,Metabolism
+GO:0008152,metabolic process,BP,0.2378,FGSG_03541,GOI,Toxins
+GO:0008152,metabolic process,BP,0.2378,FGSG_02329,GOI,Pigment
+GO:0008152,metabolic process,BP,0.2378,FGSG_13952,GOI,Effectors
+GO:0008152,metabolic process,BP,0.2378,FGSG_03599,GOI,Toxins
+GO:0008152,metabolic process,BP,0.2378,FGSG_08795,GOI,Metabolism
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_03881,GOI,Pathogenicity
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_11184,GOI,Metabolism
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_10670,GOI,Effectors
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_11326,GOI,Metabolism
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_02326,GOI,Pigment
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_02323,GOI,Pigment
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_05919,GOI,Metabolism
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_07896,GOI,Toxins
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_08082,GOI,Toxins
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_03543,GOI,Toxins
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_02328,GOI,Pigment
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_07921,candidate_seed,
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_03539,GOI,Toxins
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_08081,GOI,Toxins
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_09187,GOI,Pigment
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_08083,GOI,Toxins
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_00007,GOI,Toxins
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_03600,GOI,Effectors
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_02840,GOI,Effectors
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_03532,GOI,Toxins
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_02324,GOI,Pigment
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_02327,GOI,Pigment
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_02321,GOI,Pigment
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_02903,GOI,Effectors
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_09064,GOI,Metabolism
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_03842,GOI,Metabolism
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_07683,candidate_seed,
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_02255,GOI,Effectors
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_12211,GOI,Metabolism
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_02325,GOI,Pigment
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_02320,GOI,Pigment
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_01866,GOI,Metabolism
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_03541,GOI,Toxins
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_02329,GOI,Pigment
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_13952,GOI,Effectors
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_03599,GOI,Toxins
+GO:0008270,zinc ion binding,MF,0.8265,FGSG_08795,GOI,Metabolism

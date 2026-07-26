@@ -1,0 +1,7 @@
+contrast,counts,tpm,fpkm,shared_all3,union,pct_concordant
+dark_light_vs_black_light,1989,1965,1743,1339,2496,53.6
+control_vs_black_light,753,780,639,477,977,48.8
+low_light_vs_black_light,2721,2877,2681,1788,3705,48.3
+control_vs_dark_light,1219,1116,950,877,1341,65.4
+low_light_vs_dark_light,631,617,526,460,734,62.7
+low_light_vs_control,1639,1634,1436,1129,2031,55.6
